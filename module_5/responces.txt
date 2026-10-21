@@ -1,0 +1,4 @@
+GET /api/notes HTTP/1.1" 200 OK - коректно работающий запрос
+GET /api/notes/id_user/99999 HTTP/1.1" 404 Not Found - ссыллка/файл не найден
+GET /api/notes?id_user=10 HTTP/1.1" 200 OK - пустой массив
+GET /api/notes?error=1 HTTP/1.1" 500 Internal Server Error - некоректный запрос
